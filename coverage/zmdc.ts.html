@@ -25,28 +25,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>92/92</span>
+                <span class='fraction'>105/105</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>21/21</span>
+                <span class='fraction'>24/24</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>92/92</span>
+                <span class='fraction'>105/105</span>
             </div>
         
             
@@ -192,7 +192,23 @@
 <a name='L127'></a><a href='#L127'>127</a>
 <a name='L128'></a><a href='#L128'>128</a>
 <a name='L129'></a><a href='#L129'>129</a>
-<a name='L130'></a><a href='#L130'>130</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -292,7 +308,7 @@
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">7x</span>
@@ -303,6 +319,7 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">36x</span>
 <span class="cline-any cline-yes">36x</span>
 <span class="cline-any cline-yes">36x</span>
 <span class="cline-any cline-yes">12x</span>
@@ -321,7 +338,22 @@
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import type {CurlyMatch, Example, Formatter} from "./types.js";
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">36x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type {CurlyMatch, Example, Formatter, HtmlCommentCandidate} from "./types.js";
 &nbsp;
 export const JS_EXAMPLE_EL_QUERY = 'code[class*="example-javascript"]';
 export const HTML_EXAMPLE_EL_QUERY = 'code[class*="example-html"]';
@@ -421,7 +453,7 @@ export function showExampleCode(example:Example, fmt: Formatter = {js:htmlEscape
 }
 &nbsp;
 export function parseCode(functionLines:string[]):Example {
-    const HTML_INDICATOR = '// &lt;';
+&nbsp;
     const FUNCTION_INDENT_SIZE = 4;
 &nbsp;
     const js = [];
@@ -432,11 +464,12 @@ export function parseCode(functionLines:string[]):Example {
         html.push('&lt;!-- function is minified --&gt;')
     }
     for(const line of functionBodyLines ) {
-        const chars = line.trim();
-        if (chars.startsWith(HTML_INDICATOR) ) {
-            html.push(chars.slice(HTML_INDICATOR.length-1));
+        const chars = line.slice(FUNCTION_INDENT_SIZE).trimEnd();
+        const htmlComment = validHTML(chars);
+        if (  htmlComment.isComment ) {
+            html.push(  htmlComment.value );
         }else {
-            js.push(line.slice(FUNCTION_INDENT_SIZE).trimEnd());
+            js.push(chars);
         }
     }
     const elId = parseElId(functionLines[1]);
@@ -450,14 +483,29 @@ function parseElId(line:string) {
         return line.slice(EL_ID_INDICATOR.length).trim();
     }
     throw new Error(`'${line}' not started with ${EL_ID_INDICATOR}`);
-}</pre></td></tr></table></pre>
+}
+&nbsp;
+function validHTML(chars:string):HtmlCommentCandidate {
+    const HTML_INDICATOR = /^(\/\/(\s+))&lt;/m;
+    const matches = HTML_INDICATOR.exec(chars);
+    if(matches) {
+        return {
+            isComment:true,
+            value: chars.slice(matches[1].length)
+        }
+    }
+    return  {
+        isComment: false
+    }
+}
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-09T20:44:16.440Z
+                at 2025-04-09T21:20:56.635Z
             </div>
         <script src="prettify.js"></script>
         <script>

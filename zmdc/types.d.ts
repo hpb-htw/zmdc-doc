@@ -31,4 +31,8 @@ export interface CurlyMatch {
     openCurly: number;
     closeCurly: number;
 }
+export interface HtmlCommentCandidate {
+    isComment: boolean;
+    value?: string;
+}
 //# sourceMappingURL=types.d.ts.map
