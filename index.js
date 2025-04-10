@@ -1,5 +1,9 @@
-import {htmlEscape, parseExampleFunctions, showExampleCode} from './zmdc/zmdc.js';
-import {JS_EXAMPLE_EL_QUERY, HTML_EXAMPLE_EL_QUERY} from "./zmdc/zmdc.js";
+import {JS_EXAMPLE_EL_QUERY, HTML_EXAMPLE_EL_QUERY,
+    htmlEscape, parseExampleFunctions, showExampleCode} from '../dist/zmdc.js';
+
+import Prism from 'prismjs';
+
+window.Prism = Prism;
 
 document.addEventListener("DOMContentLoaded", async () => {
     // run demo code of formatFancy
