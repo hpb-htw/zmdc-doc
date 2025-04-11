@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1744366831874" clover="3.2.0">
-  <project timestamp="1744366831874" name="All files">
+<coverage generated="1744369019795" clover="3.2.0">
+  <project timestamp="1744369019795" name="All files">
     <metrics statements="118" coveredstatements="118" conditionals="27" coveredconditionals="27" methods="7" coveredmethods="7" elements="152" coveredelements="152" complexity="0" loc="118" ncloc="118" packages="1" files="2" classes="2"/>
     <file name="types.ts" path="/tmp/lib/types.ts">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
