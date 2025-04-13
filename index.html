@@ -74,9 +74,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="ZmdC" class="md-header__button md-logo" aria-label="ZmdC" data-md-component="logo">
       
@@ -157,6 +155,34 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+    
+  
+  Index
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -170,8 +196,12 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="ZmdC" class="md-nav__button md-logo" aria-label="ZmdC" data-md-component="logo">
       
@@ -368,149 +398,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#install" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Install">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#esm" class="md-nav__link">
-    <span class="md-ellipsis">
-      ESM
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#typescript" class="md-nav__link">
-    <span class="md-ellipsis">
-      TypeScript
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-you-want" class="md-nav__link">
-    <span class="md-ellipsis">
-      What you want
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-your-dont-want-to-do" class="md-nav__link">
-    <span class="md-ellipsis">
-      What your don't want to do
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-you-have-to-do" class="md-nav__link">
-    <span class="md-ellipsis">
-      What you have to do
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="What you have to do">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-prepare-your-demonstration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 1. Prepare your demonstration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-run-your-demonstration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 2. Run your demonstration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-mark-necessary-html-tags-in-demonstration-function" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 3. Mark necessary HTML tags in demonstration function
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-show-your-demonstration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Step 4. Show your demonstration
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -541,9 +428,9 @@ You want to show a usage of this function in a context (left side) and the resul
 <div class="grid">
     <div id="fancy-demo">
         <i>JavaScript</i>
-        <pre><code class="example-javascript language-javascript"></code></pre>
+        <pre><code class="language-javascript"></code></pre>
         <i>HTML</i>
-        <pre><code class="example-html language-html"></code></pre>
+        <pre><code class="language-html"></code></pre>
     </div>
     <div>
         <i>Result:</i>
@@ -557,33 +444,83 @@ But you don't want to also change the HTML, where you placed the example code.
 This library should do it for you.</p>
 <h3 id="what-you-have-to-do">What you have to do<a class="headerlink" href="#what-you-have-to-do" title="Permanent link">#</a></h3>
 <h4 id="step-1-prepare-your-demonstration">Step 1. Prepare your demonstration<a class="headerlink" href="#step-1-prepare-your-demonstration" title="Permanent link">#</a></h4>
-<div id="dem-encapsulate">
-Encapsulate the demo code in a function.
-<pre><code></code></pre>
-
-Update your HTML to let your demo function work properly.
-<pre><code></code></pre>
+<div id="howto-prepare-demo-function">
+    Encapsulate the demo code in a function:
+    <pre><code class="language-javascript"></code></pre>
+    Update your HTML to let your demo function work properly.
+    <pre><code class="language-html"></code></pre>
 </div>
 
 <h4 id="step-2-run-your-demonstration">Step 2. Run your demonstration<a class="headerlink" href="#step-2-run-your-demonstration" title="Permanent link">#</a></h4>
-<p>Call your demo function:
-In this step you can check if your demo function work like you want.</p>
+<p>Call your demo function:</p>
+<div id="howto-run-demo-function">
+    <pre><code class="language-javascript"></code></pre>    
+</div>
+
+<p>In this step you can check if your demo function work like you want.</p>
 <h4 id="step-3-mark-necessary-html-tags-in-demonstration-function">Step 3. Mark necessary HTML tags in demonstration function<a class="headerlink" href="#step-3-mark-necessary-html-tags-in-demonstration-function" title="Permanent link">#</a></h4>
 <p>Before you can let this library show you demo code on DOM, you have to mark these information in your function:</p>
-<ul>
-<li>In which DOM element should the demo code be shown</li>
-<li>Which DOM elements needs the demo code to work properly</li>
-</ul>
-<p>For the 1. point: TODO</p>
-<p>For the 2. point: One comment in form <code>// &lt;tag&gt;</code> for each necessary DOM-element. 
-The demo function here just needs only an element with id="ff-result", so there is only one comment. 
-By this way you can directly denote the demo code, which DOM element it needs to work.</p>
+<ol>
+    <li>In which DOM element should the demo code be shown</li>
+    <li>Which DOM elements needs the demo code to work properly</li>
+</ol>
+
+<div id="howto-mark-demo-info">
+    <p>
+        <i>For the 1. point:</i> A demo code-block starts with a 
+        <code>// tag: DOM-id</code>
+        Here ist an element with <code>id="fancy-demo"</code>.
+        The element does not have to be a div, in most cases a div is fine.
+    </p>
+    <pre><code class="language-javascript"></code></pre>
+    <p>
+        The given element must contain at least two <code>code</code>-Tags with class list containing <code>language-javascript</code> and <code>language-html</code> respectively.
+    </p>
+    <pre><code class="language-html"></code></pre>
+    <p>
+        <i>For the 2. point:</i> One comment in form <code>// &lt;tag&gt;</code> for each necessary DOM-element.
+        The demo function here just needs only an element with <code>id="ff-result"</code>,
+        so there is only one comment.
+        By this way you can directly denote the demo code, which DOM element it needs to work.
+    </p>
+</div>
+
 <h4 id="step-4-show-your-demonstration">Step 4. Show your demonstration<a class="headerlink" href="#step-4-show-your-demonstration" title="Permanent link">#</a></h4>
-<p>Without minify In the case that you don't minify your code, you can easily get source code of a function. In this case you can do following:</p>
+<p>You can use this function to load your javascript file over GET:</p>
+<div id="howto-load-demo-code">
+    <pre><code class="language-javascript"></code></pre>
+</div>
+
+<p>For example:</p>
+<div id="howto-show-demo-code">
+    <pre><code class="language-javascript"></code></pre>
+</div>
+
 <p>Now the div with id="fancy-demo" has the following content:</p>
-<p>InnerHTML of the element <code>&lt;code class="example-javascript&gt;</code>
-InnerHTML of the element <code>&lt;code class="example-html&gt;</code></p>
+<div id="duplicate-fancy-demo">
+    <ul>
+        <li>
+            InnerHTML of the element <code>&lt;code class="language-javascript"&gt;</code>
+            <pre><code class="language-javascript"></code></pre>
+        </li>
+        <li>
+            InnerHTML of the element <code>&lt;code class="language-html"&gt;</code>
+            <pre><code class="language-html"></code></pre>
+        </li>
+    </ul>
+</div>
+
 <p>As you wish to have!</p>
+<details class="example">
+<summary>Code to verify content of <code>ff-demo</code></summary>
+<p>
+<div id="verify-contents-of-fancy-demo">
+    JavaScript:
+    <pre><code class="language-javascript"></code></pre>
+    HTML:
+    <pre><code class="language-html"></code></pre>
+</div></p>
+</details>
 <script src="lib/index.js" type="module"></script>
 
 
@@ -631,7 +568,7 @@ InnerHTML of the element <code>&lt;code class="example-html&gt;</code></p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes", "navigation.expand", "navigation.tabs", "toc.integrate"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
