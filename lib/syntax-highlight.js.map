@@ -1,0 +1,1 @@
+{"version":3,"file":"syntax-highlight.js","sources":["../../lib/syntax-highlight.js"],"sourcesContent":["import Prism from 'prismjs';\n\nwindow.Prism = Prism;\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n\n})\n"],"names":["Prism"],"mappings":";AAEA,OAAO,QAAQA;AAEf,SAAS,iBAAiB,oBAAoB,MAAM;AAEpD,CAAC;"}
